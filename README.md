@@ -9,8 +9,9 @@ Este proyecto es un gestor de cursos creado con React y Vite. Incluye:
 
 Entregables
 1. Código fuente del proyecto.
-2. Capturas de la aplicación funcionando.
-3. Captura de localStorage con favoritos guardados.
+2. -Esta en este repositorio 
+3. Capturas de la aplicación funcionando.
+4. Captura de localStorage con favoritos guardados.
 ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/47498075bc0b1ab876c40f373e11ae0b538035fd/pregunta3.png)
 5. Breve explicación de componentes creados.
 4. Breve explicación de componentes creados
