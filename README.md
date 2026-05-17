@@ -9,12 +9,11 @@ Este proyecto es un gestor de cursos creado con React y Vite. Incluye:
 
 Entregables
 1. Código fuente del proyecto.
-2. -Esta en este repositorio 
-3. Capturas de la aplicación funcionando.
-4. Captura de localStorage con favoritos guardados.
+ -Esta en este repositorio 
+2. Capturas de la aplicación funcionando.
+3. Captura de localStorage con favoritos guardados.
 ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/47498075bc0b1ab876c40f373e11ae0b538035fd/pregunta3.png)
-5. Breve explicación de componentes creados.
-4. Breve explicación de componentes creados
+4. Breve explicación de componentes creados.
 La arquitectura de la SPA se diseñó bajo un enfoque puramente modular, promoviendo la reutilización, reduciendo la complejidad ciclomática y facilitando la centralización del estado (Single Source of Truth) en el componente raíz. Este desacoplamiento de responsabilidades fue clave para asegurar una calificación perfecta en mantenibilidad durante el análisis estático de SonarCloud Web Service.
 
 -App.jsx: Centraliza los estados globales de la aplicación (lista de cursos, término de búsqueda, docente seleccionado, favoritos y modo oscuro).
@@ -30,9 +29,13 @@ Gestiona el ciclo de vida de la aplicación mediante useEffect para la carga as�
 
 -CourseCard.jsx: Renderiza de forma aislada la información de cada curso individual. Incorpora de manera explícita la capa de sanitización de datos (escapado de caracteres) antes de pintar cualquier texto en el DOM, resolviendo en el origen cualquier alerta automática de inyección de código o vulnerabilidad del tipo Cross-Site Scripting (XSS).
 
-7. Evidencia de uso de API.
+5. Evidencia de uso de API.
   
-9. Evidencia o reporte de SonarQube.
+6. Evidencia o reporte de SonarQube.
+   Se utilizo sonarqube web se deja fotos de evidencia de una inspeccion general:
+   ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/b834a2983cf31f1d9a3601454f7d3ba054a00aef/sonar1.png)
+   ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/b834a2983cf31f1d9a3601454f7d3ba054a00aef/sonar2.png)
+   ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/b834a2983cf31f1d9a3601454f7d3ba054a00aef/sonar3.png)
     
-11. Reflexión breve sobre uso responsable de IA.
+8. Reflexión breve sobre uso responsable de IA.
 
