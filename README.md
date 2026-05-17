@@ -11,6 +11,10 @@ Entregables
 1. Código fuente del proyecto.
  -Esta en este repositorio 
 2. Capturas de la aplicación funcionando.
+   Tema claro
+  ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/e78470837607f7a0ccb5864a2a7cbe47ccde1197/codigofuncionando2.png)
+   Tema oscuro
+  ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/e78470837607f7a0ccb5864a2a7cbe47ccde1197/codigofuncionando1.png)
 3. Captura de localStorage con favoritos guardados.
 ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/47498075bc0b1ab876c40f373e11ae0b538035fd/pregunta3.png)
 4. Breve explicación de componentes creados.
@@ -30,12 +34,16 @@ Gestiona el ciclo de vida de la aplicación mediante useEffect para la carga as�
 -CourseCard.jsx: Renderiza de forma aislada la información de cada curso individual. Incorpora de manera explícita la capa de sanitización de datos (escapado de caracteres) antes de pintar cualquier texto en el DOM, resolviendo en el origen cualquier alerta automática de inyección de código o vulnerabilidad del tipo Cross-Site Scripting (XSS).
 
 5. Evidencia de uso de API.
-  
+Para alimentar el catálogo de la aplicación, se consume el servicio REST público de JSONPlaceholder (endpoint: https://jsonplaceholder.typicode.com/posts).
+Consumo e Integración: En src/services/courseService.js se utiliza la librería Axios mediante funciones asíncronas (async/await) para realizar peticiones HTTP GET de manera limpia y eficiente.
+
 6. Evidencia o reporte de SonarQube.
    Se utilizo sonarqube web se deja fotos de evidencia de una inspeccion general:
    ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/b834a2983cf31f1d9a3601454f7d3ba054a00aef/sonar1.png)
    ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/b834a2983cf31f1d9a3601454f7d3ba054a00aef/sonar2.png)
    ![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/b834a2983cf31f1d9a3601454f7d3ba054a00aef/sonar3.png)
     
-8. Reflexión breve sobre uso responsable de IA.
+7. Reflexión breve sobre uso responsable de IA.
+El uso de Inteligencias Artificiales Generativas en este proyecto se abordó bajo un criterio estricto de co-diseño estético y asistencia técnica en maquetación, y no como un reemplazo del pensamiento lógico o analítico del desarrollador.
+La interacción con la IA se limitó exclusivamente a la capa de diseño CSS y sugerencias visuales. Fue una herramienta de apoyo útil para agilizar la creación de las reglas de inversión cromática necesarias para el Modo Oscuro, la definición de variables globales de color (:root y body.dark-mode), y la sugerencia de selectores adaptables para las tarjetas de los cursos.
 
