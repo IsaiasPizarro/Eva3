@@ -7,15 +7,14 @@ Este proyecto es un gestor de cursos creado con React y Vite. Incluye:
 - sistema de favoritos guardados en LocalStorage
 - modo claro / oscuro
 
-Currently, two official plugins are available:
+Entregables
+1. Código fuente del proyecto.
+2. Capturas de la aplicación funcionando.
+3. Captura de localStorage con favoritos guardados.
+![imagen alt](https://github.com/IsaiasPizarro/Eva3/blob/47498075bc0b1ab876c40f373e11ae0b538035fd/pregunta3.png)
+   
+5. Breve explicación de componentes creados.
+6. Evidencia de uso de API.
+7. Evidencia o reporte de SonarQube.
+8. Reflexión breve sobre uso responsable de IA.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
