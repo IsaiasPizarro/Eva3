@@ -1,0 +1,307 @@
+/* Estilos globales básicos */
+* {
+ box-sizing: border-box;
+}
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ background: #f4f6f8;
+ color: #1f2937;
+}
+
+/* Contenedor principal de la aplicación */
+.app {
+ width: min(1100px, 95%);
+ margin: 0 auto;
+ padding: 24px 0;
+}
+
+/* Encabezado superior con título y descripción */
+.header {
+ background: #111827;
+ color : white;
+ padding: 24px;
+ border-radius: 16px;
+ margin-bottom: 20px;
+}
+.header h1 {
+ margin: 0 0 8px;
+}
+.header p {
+ margin: 0;
+}
+/* Resumen de métricas superiores */
+.summary {
+ display: flex;
+ gap: 16px;
+ margin-bottom: 20px;
+}
+.summary p {
+ background: #e2e8f0;
+ padding: 12px 16px;
+ border-radius: 12px;
+ font-weight: bold;
+}
+
+/* Barra de búsqueda para filtrar cursos por título */
+.search-container {
+ background: white;
+ padding: 16px;
+ border-radius: 12px;
+ margin-bottom: 20px;
+}
+.search-container label {
+ display: block;
+ font-weight: bold;
+ margin-bottom: 8px;
+}
+.search-container input {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #cbd5e1;
+ border-radius: 8px;
+ font-size: 16px;
+}
+
+/* Lista de tarjetas de cursos con diseño responsive */
+.course-list {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 16px;
+}
+/* Tarjetas individuales de curso */
+.course-card {
+ background: white;
+ padding: 18px;
+ border-radius: 14px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+.course-card h2 {
+ font-size: 18px;
+ margin-top: 0;
+ text-transform: capitalize;
+}
+.course-card p {
+ line-height: 1.5;
+}
+.course-card small {
+ display: block;
+ margin-bottom: 12px;
+ color: #475569;
+}
+/* Botones primarios y de favorito */
+.btn {
+ width: 100%;
+ border: none;
+ padding: 10px;
+ border-radius: 8px;
+ background: #2563eb;
+ color: white;
+ cursor: pointer;
+ font-weight: bold;
+}
+.btn:hover {
+ background: #1d4ed8;
+}
+.btn.favorite {
+ background: #dc2626;
+}
+.btn.favorite:hover {
+ background: #b91c1c;
+}
+/* Mensajes informativos y de error */
+.message {
+ background: white;
+ padding: 16px;
+ border-radius: 12px;
+}
+.error {
+ background: #fee2e2;
+ color: #991b1b;
+ padding: 16px;
+ border-radius: 12px;
+ margin-bottom: 20px;
+}
+.error button {
+ padding: 8px 12px;
+ border: none;
+ background: #991b1b;
+ color: white;
+ border-radius: 8px;
+ cursor: pointer;
+}
+
+/* Controles en la cabecera: botón para cambiar el tema */
+.header-actions {
+ display: flex;
+ justify-content: flex-end;
+ margin-bottom: 20px;
+}
+
+.theme-toggle-btn {
+ border: none;
+ background: #1f2937;
+ color: white;
+ padding: 10px 16px;
+ border-radius: 12px;
+ cursor: pointer;
+ font-weight: bold;
+}
+
+.theme-toggle-btn:hover {
+ background: #111827;
+}
+
+/* Espacio para los controles de filtro y búsqueda */
+.controls {
+ display: grid;
+ gap: 16px;
+ margin-bottom: 20px;
+}
+
+@media (min-width: 720px) {
+ .controls {
+ grid-template-columns: 1fr 280px;
+ align-items: end;
+ }
+}
+
+/* Filtro específico por docente */
+.teacher-filter {
+ background: white;
+ padding: 16px;
+ border-radius: 12px;
+}
+
+.teacher-filter label {
+ display: block;
+ margin-bottom: 8px;
+ font-weight: bold;
+}
+
+.teacher-filter select {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #cbd5e1;
+ border-radius: 8px;
+ font-size: 16px;
+}
+
+/* Panel de estadísticas de favoritos por docente */
+.favorite-stats {
+ background: #ffffff;
+ color: #0f172a;
+ padding: 18px;
+ border-radius: 12px;
+ margin-bottom: 20px;
+ box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.favorite-stats h2 {
+ margin: 0 0 12px;
+}
+
+.stats-list {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+}
+
+/* Etiquetas de cada docente con su cantidad de favoritos */
+.stat-chip {
+ background: #eef2ff;
+ color: #3730a3;
+ padding: 10px 14px;
+ border-radius: 999px;
+ font-size: 14px;
+ font-weight: 700;
+ border: 1px solid #c7d2fe;
+}
+
+/* Estilos específicos para el modo oscuro */
+body.dark-mode,
+.dark-mode .app {
+ background: #160e0e;
+ color: #ffffff;
+}
+
+body.dark-mode {
+ background: #000000;
+}
+
+.dark-mode .header,
+.dark-mode .search-container,
+.dark-mode .course-card,
+.dark-mode .summary p,
+.dark-mode .message,
+.dark-mode .teacher-filter,
+.dark-mode .favorite-stats {
+ background: #111827;
+ color: #e2e8f0;
+}
+
+.dark-mode .header p,
+.dark-mode .course-card small,
+.dark-mode .summary p,
+.dark-mode .search-container label,
+.dark-mode .teacher-filter label,
+.dark-mode .favorite-stats h2,
+.dark-mode .stat-chip {
+ color: #e2e8f0;
+}
+
+.dark-mode .stat-chip {
+ background: #1f2937;
+ border: 1px solid #334155;
+}
+
+.dark-mode .summary p,
+.dark-mode .message {
+ background: #1e293b;
+}
+
+.dark-mode .search-container input,
+.dark-mode .teacher-filter select {
+ background: #0f172a;
+ border: 1px solid #334155;
+ color: #e2e8f0;
+}
+
+.dark-mode .search-container input::placeholder {
+ color: #94a3b8;
+}
+
+.dark-mode .btn {
+ background: #3b82f6;
+ color: white;
+}
+
+.dark-mode .btn:hover {
+ background: #2563eb;
+}
+
+.dark-mode .btn.favorite {
+ background: #ef4444;
+}
+
+.dark-mode .btn.favorite:hover {
+ background: #dc2626;
+}
+
+.dark-mode .error {
+ background: #7f1d1d;
+ color: #fee2e2;
+}
+
+.dark-mode .error button {
+ background: #dc2626;
+}
+
+.dark-mode .theme-toggle-btn {
+ background: #334155;
+ color: #e2e8f0;
+}
+
+.dark-mode .theme-toggle-btn:hover {
+ background: #1e293b;
+}
